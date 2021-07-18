@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Quick JavaScript Note</title>
+      
+      <style>
+        body {background-color: rgb(226, 209, 178);
+              color: rgb(0, 0, 0);
+              font-family: 'Courier New', Courier, monospace;
+            }
+        </style>
+    
+    </head>
+    <body>
+        
+        <h2 id="demo">Edit HTML Content by JavaScript</h2>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+        <h2>Change Attribute Values</h2>
+        <p>Change the value of the src(source) attribute of an ,img. tag</p>
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+        <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+        <h2>Change Font</h2>
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me to change "demo" font to 35px</button>
+
+        <h2>Change Display Type</h2>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Click me to hide id="demo" text</button>
+
+        <h2>JavaScript in body</h2>
+        <p id="bodydemo">This this demo text</p>
+        <script>
+        document.getElementById("bodydemo").innerHTML = "My first JavaScript";
+        </script>
+
+        <h2>Javascript FUNCTION</h2>
+        <p id="functiondemo">This will be replaced by JavaScript</p>
+        <button type="button" onclick=myFunction1()>Click Here</button>
+        <script>
+            function myFunction1() {
+                document.getElementById("functiondemo").innerHTML = "Paragraph changed.";
+            }
+            </script>
+
+        <h2>External JavaScript</h2>
+        <p id="externalFunctionDemo">A Paragraph.</p>
+        <button type="button" onclick="myFunction2()">Try it</button>
+        <p>(myFunction is stored in an external file called "myScript.js")</p>
+        <script src="script.js"></script>
+
+        <h2>External JavaScript</h2>
+        <p id="demo">A Paragraph.</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+        <p>(myFunction is stored in an external file called "myScript.js")</p>
+        <script src="https://www.w3schools.com/js/myScript.js"></script>
+
+        <h2>JS Output</h2>
+        <h3>Desiplay with innerHTML</h3>
+        <p>To access an HTML element, JavaScript can use the document.getElementByID method. The id attribute defined the HTML element.</p>
+        <p id="innerHTMLDemo"></p>
+        <h3>Document.Write</h3>
+        <buttom type='button' onclick="document.write(5+6)">Click to get 5+6</buttom>
+        <h3>Window.Alert</h3>
+        <buttom type="buttom" onclick="window.alert(5+6)">Click to get 5+6</buttom>
+
+        <h2>Activate Debugging</h2>
+        <p>F12 on your keybord will activate debugging.</p>
+        <p>Then select "Console" in the debugger menu.</p>
+        <p>Then click Run again.</p>
+        <script>
+        console.log(5 + 6);
+        </script>
+
+        <h2>Statement</h2>
+        <h3>JS is running on blowser</h3>
+        <p>-----------------------</p>
+        <p id="statementDemo"></p>
+        <p>-----------------------</p>
+        <script>
+            document.getElementById("statementDemo").innerHTML ="Hello ID statementDemo";
+        </script>
+        <h3>JS executable statement is separated by Semicolons;</h3>
+        <p>-----------------------</p>
+        <p id="semicolonDemo">123456789</p>
+        <p>-----------------------</p>
+        <script>
+            let a, b, c; //Declare 3 variables
+            a = 5; //Assign the value 5 to a
+            b = 6; //Assign the value 6 to b
+            c = a + b; //Assign the sum of a and b to c
+            document.getElementById("semicolonDemo").innerHTML = c;
+        </script>
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+        <h2></h2>
+
+
+
+
+
+        <!---<script>
+             alert("Hello");   
+        </script>-->
+        <script src="scripts.js"></script>
+    </body>
+</html>
